@@ -3,7 +3,7 @@
 # http://us.php.net/
 
 FROM ubuntu:14.04
-MAINTAINER Ryan Seto <ryanseto@yak.net>
+MAINTAINER Jonathan Martins <web@jonathanmartins.com.br>
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list && \
         apt-get update && \
