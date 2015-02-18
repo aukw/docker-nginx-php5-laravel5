@@ -2,7 +2,7 @@
 # http://wiki.nginx.org/
 # http://us.php.net/
 
-FROM ubuntu:14.04
+FROM ubuntu:trusty
 MAINTAINER Jonathan Martins <web@jonathanmartins.com.br>
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list && \
