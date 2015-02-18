@@ -2,10 +2,10 @@
 # http://wiki.nginx.org/
 # http://us.php.net/
 
-FROM ubuntu:precise
+FROM ubuntu:14.04
 MAINTAINER Ryan Seto <ryanseto@yak.net>
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list && \
+RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list && \
         apt-get update && \
         apt-get upgrade
 
