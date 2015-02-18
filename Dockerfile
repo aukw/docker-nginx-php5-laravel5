@@ -28,7 +28,7 @@ ADD https://raw.github.com/h5bp/server-configs-nginx/master/h5bp/location/expire
 ADD https://raw.github.com/h5bp/server-configs-nginx/master/h5bp/directive-only/x-ua-compatible.conf /etc/nginx/conf/x-ua-compatible.conf
 ADD https://raw.github.com/h5bp/server-configs-nginx/master/h5bp/location/cross-domain-fonts.conf /etc/nginx/conf/cross-domain-fonts.conf
 ADD https://raw.github.com/h5bp/server-configs-nginx/master/h5bp/location/protect-system-files.conf /etc/nginx/conf/protect-system-files.conf
-ADD nginx-site.conf /etc/nginx/sites-available/default
+ADD vhost.conf /etc/nginx/sites-available/default
 RUN sed -i -e '/access_log/d' /etc/nginx/conf/expires.conf
 RUN sed -i -e 's/^listen =.*/listen = \/var\/run\/php5-fpm.sock/' /etc/php5/fpm/pool.d/www.conf
 
