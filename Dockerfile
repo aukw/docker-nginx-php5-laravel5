@@ -20,7 +20,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install
 RUN apt-get install -y nginx \
-    php5-fpm php5-mysql php-apc php5-imagick php5-imap php5-mcrypt php5-gd libssh2-php
+    git curl php5-fpm php5-mysql php5-mcrypt php5-json php5-gd libssh2-php
 
 RUN echo "cgi.fix_pathinfo = 0;" >> /etc/php5/fpm/php.ini
 ADD nginx.conf /etc/nginx/nginx.conf
